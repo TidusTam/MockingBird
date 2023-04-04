@@ -9,7 +9,6 @@ recognized_datasets = [
     "magicdata",
     "aishell3",
     "data_aishell"
-    "BZNSYP"
 ]
 
 #TODO: add for emotional data 
@@ -40,9 +39,6 @@ if __name__ == "__main__":
     parser.add_argument("-d", "--dataset", type=str, default="aidatatang_200zh", help=\
         "Name of the dataset to process, allowing values: magicdata, aidatatang_200zh, aishell3, data_aishell.")
     parser.add_argument("-e", "--encoder_model_fpath", type=Path, default="data/ckpt/encoder/pretrained.pt", help=\
-    parser.add_argument("-d","--dataset", type=str, default="aidatatang_200zh", help=\
-        "Name of the dataset to process, allowing values: magicdata, aidatatang_200zh, aishell3, BZNSYP.")
-    parser.add_argument("-e", "--encoder_model_fpath", type=Path, default="encoder/saved_models/pretrained.pt", help=\
         "Path your trained encoder model.")
     parser.add_argument("-ne", "--n_processes_embed", type=int, default=1, help=\
         "Number of processes in parallel.An encoder is created for each, so you may need to lower "
